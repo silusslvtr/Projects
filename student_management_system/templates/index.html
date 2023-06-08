@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}<link href="{% static 'css/index.css' %}" rel="stylesheet" type="text/css">
+    {% load static %}<link href="{% static 'css/navbar.css' %}" rel="stylesheet" type="text/css">
+    {% load static %}<link href="{% static 'css/main.css' %}" rel="stylesheet" type="text/css">
+    <title>
+        {% block title %}
+        
+        Shaolin Nepal | Home
+
+        {% endblock %}
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    {% load static %}<link href="{% static 'img/Buddha_logo.png' %}" rel="icon" type="image/x-icon">
+    {% load static %}<script src="{% static 'js/script.js' %}"></script>
+</head>
+<body>
+    <div class="navbar">
+        {% include 'navbar.html' %}
+    </div>
+    <div id="background_image">
+        <video autoplay muted loop src="static/video/Intro_video.mp4"></video>
+        <div id="background_content">
+            <img src="static/img/shaolin_buddha.png"><br/>
+            <p Style=" font-weight: 200; font-style: italic; font-size: 2vw; padding: 20px;">Learn <b>KUNG FU</b> in</p><br/>
+            <p style="margin-top: 5vh; text-shadow: 0 0 20px #fff;">SHAOLIN NEPAL</p><br/>
+        </div>
+    </div>
+    <div id="maincontent">
+
+        <div id="content_inside">
+            <div class="about_school">
+                <h3>Learn Kung Fu in Nepal</h3>
+                <div class="about_school_inner_content">
+                    <div id="about_school_inner_content_text">
+                        {% load static %}<img src="{% static 'img/4.png' %}">
+                        <p>
+                            Personally study Kung Fu under professional and experienced master with authentic lineages.
+                            The school is an institute for the teaching and promotion of traditional Shaolin 
+                            Kung Fu and Chinese Martial Arts in Nepal. The Kung Fu masters of our school are 
+                            currently accepting students from around the world who wish to learn Shaolin Kung Fu, 
+                            and other traditional Chinese Kung Fu, such as Tai Chi, Qigong and Sanda (Sanshou).<br/>
+                            <b>THE SCHOOL ACCEPTS AND TEACHES STUDENTS OF ALL SKILL LEVELS.</b>
+                        </p>
+                    </div>
+                    <div id="about_school_inner_content_img">
+                        <div id="slideshow">
+                            <div>
+                                <img src="static/img/slide_img1.jpg">
+                            </div>
+                            <div>
+                                <img src="static/img/slide_img2.jpg">
+                            </div>
+                            <div>
+                                <img src="static/img/slide_img3.jpg">
+                            </div>
+                            <div>
+                                <img src="static/img/slide_img4.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="second_content">
+            <div class="styles">
+                <div id="style_logo">
+                    {% load static %}<img src="{% static 'img/style_logo.png' %}">
+                    <h3> Kung Fu Styles </h3>
+                </div>
+                <div class="inner_style">
+                    <div class="column">
+                        <div class="columninside">
+                            {% load static %}<img src="{% static 'img/shaolin_kungfu.jfif' %}">
+                            <div class="content">
+                                <p>Shaolin Kung Fu</p>
+                            </div>
+                            <div class="columninfo">
+                                <div class="columninfo_inside">
+                                    <p id="title">Shaolin Kung Fu</p>
+                                    <p id="explain">Shaolin Gongfu is in the first place, the expression of a deeper 
+                                    spiritual goal and secondarily in the pursuit for superhuman strength.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="columninside">
+                            {% load static %}<img src="{% static 'img/tai_chi.jfif' %}">
+                            <div class="content">
+                                <p>Tai Chi</p>
+                            </div>
+                            <div class="columninfo">
+                                <div class="columninfo_inside">
+                                    <p id="title">Tai Chi</p>
+                                    <p id="explain">In the practice of Tai Chi, every move is to be felt peaceful and comfortable. 
+                                    Acts are light and agile, slow and smooth. Loose and tight movements are in order 
+                                    as is force and flexibility correlated.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="columninside">
+                            {% load static %}<img src="{% static 'img/qi_gong.jfif' %}">
+                            <div class="content">
+                                <p>Qi Gong</p>
+                            </div>
+                            <div class="columninfo">
+                                <div class="columninfo_inside">
+                                    <p id="title">Qi Gong</p>
+                                    <p id="explain">Qigong refers to a wide variety of traditional meditative 
+                                    cultivation practices that involve methods of accumulating, circulating, 
+                                    and working with Qi or energy within the body.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="columninside">
+                            {% load static %}<img src="{% static 'img/sanda.jfif' %}">
+                            <div class="content">
+                                <p>Sanda</p>
+                            </div>
+                            <div class="columninfo">
+                                <div class="columninfo_inside">
+                                    <p id="title">Sanda</p>
+                                    <p id="explain">Sanda, 'chinese kickboxing' is also called Sanshou and had names 
+                                        such as Xiangbo, Shoubo and Jiji in ancient times.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="third_content">
+            <div class="master">
+                <div id="master_title">
+                    {% load static %}<img src="{% static 'img/master.png' %}">
+                    <h3>Masters</h3>
+                </div>
+                <div class="master_details">
+                    <div class="master_details_image">
+                        {% load static %}<img src="{% static 'img/shifu_raju.jpg' %}">
+                    </div>
+                    <div class="master_details_text">
+                        <h3>Shifu Raju</h3><br/>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate laudantium facere 
+                            possimus fuga minima quis ratione, saepe temporibus deleniti, libero, officia 
+                            error placeat obcaecati. Cum adipisci ex velit facilis itaque!
+                        </p>
+                    </div>
+                    <div class="second_master_details_text">
+                        <h3>Sub Coach Rajin</h3><br/>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, corrupti 
+                            deserunt, quaerat nihil blanditiis non suscipit nulla saepe consequuntur, 
+                            officia sed maxime id inventore magnam praesentium eveniet ipsam veniam nam.
+                            Possimus nostrum quo molestiae perferendis nesciunt similique non animi corrupti 
+                            eius, repudiandae eveniet, quas numquam voluptatibus praesentium atque ducimus 
+                            deleniti at quasi tempore libero ipsum? Nihil laborum unde quam quod!
+                        </p>
+                    </div>
+                    <div class="second_master_details_image">
+                        {% load static %}<img src="{% static 'img/rajin.jpg' %}">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="final_content">
+            <div class="bg_content">
+                {% load static %}<img src="{% static 'img/final_bg_logo.png' %}">
+                <p id="a">
+                    Self Development, Self Improvement, Self Awareness
+                </p>
+                <p id="b">
+                    <br/> Come and Join Us !
+                </p>
+                <div class="inner_thought">
+                    <div class="inner_thought_a">
+                        <p>
+                            <br/> Learn Martial Art
+                            <br/> Learn to Defend
+                        </p>
+                    </div>
+                    <div class="inner_thought_b">
+                        <p>
+                            <br/> Learn to Fight
+                            <br/> Learn to be calm
+                        </p>
+                    </div>
+                </div>
+                <p id="c">
+                    <br/> Learn to improve your life style !!!
+                </p>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div id="footercontent">
+                <h3 id="title_name"> Swoyambhu Traditional Kung Fu Training Center ( Shaolin Nepal )</h3>
+                <p id="info">Nepal, Bagmati Province, Kathmandu, Swoyambhu - 15, Kimdol <br/><br/> Contact : 9861069747 , 9869749284</p>
+                <div id="footer_img">
+                    <a href="https://www.facebook.com/ShaolinNepal/" target="_blank"><img src="static/img/fb_img.png" id="fb"></a>
+                    <a href="https://www.instagram.com/raju.nepali.3133/" target="_blank"><img src="static/img/insta_img.jfif" id="insta"></a></br>
+                </div>
+                <div id="ft_cp_text">
+                    <p id="#copyright_text">Copyright &copy; 2023 Shaolin Nepal | Powered by Shaolin Nepal</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

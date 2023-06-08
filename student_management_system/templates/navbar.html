@@ -1,0 +1,33 @@
+{% load static%}<link href="{% static 'css/main.css' %}" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://fonts.google.com/specimen/Oswald/tester">
+<div id="main_menu">
+    <div class="inner_main_menu">
+        <div class="text-img">
+            {% load static %}<a href="{% url 'home' %}"><img src="{% static 'img/navimg.jfif' %}" class="navimg"></a>
+            <div class="title">
+                <a href="{% url 'home' %}"><h2>Shaolin Nepal</h2><p id="quote">
+                    <i>Developing mind through discipline to create dynamism</i></p>
+                </a>
+            </div>
+        </div>
+        <div class="login-signin">
+            <a class="hover_effect" href="{% url 'login' %}">Log In</a>
+            <a class="hover_effect" href="#">Sign In</a>
+        </div>
+    </div>
+    <div class="mid_menu">
+        <div class="left_nav">
+            <a class="hover_effect" href="{% url 'home' %}">Home</a>
+            <a class="hover_effect" href="{% url 'kungfustyles' %}">Style</a>
+            <a class="hover_effect" href="#">Master</a>
+        </div>
+        <div class="right_nav">
+            <a class="hover_effect" href="#">Fees</a>
+            <a class="hover_effect" href="#">Photos</a>
+            <a class="hover_effect" href="#">Videos</a>
+        </div>
+    </div>
+    <div class="mid_img">
+        {% load static %}<a href="{% url 'home' %}"><img src="{% static 'img/head_logo.png' %}"></a>
+    </div>
+</div>

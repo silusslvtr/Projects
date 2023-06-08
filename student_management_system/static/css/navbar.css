@@ -1,0 +1,108 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+#main_menu{
+    width: 100vw;
+    position: fixed;
+    top: 0;
+}
+.inner_main_menu{
+    background-color: #333333;
+    margin: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.inner_main_menu .text-img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.title{
+    margin-left: 20px;
+}
+.title #quote{
+    font-size: 12px;
+}
+.inner_main_menu .text-img a{
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: left;
+}
+.inner_main_menu .login-signin{
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    justify-content: space-evenly;
+}
+
+.login-signin a{
+    color: #ffffff;
+    background-color: #512d2d;
+    font-size: 16px;
+    margin: 5px;
+    border: 2px solid white;
+    cursor: pointer;
+    width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+.navimg{
+    position: relative;
+    left: 0px;
+    width: 70px;
+    padding: 0;
+    margin: 0;
+}
+.mid_menu{
+    background-color: #d9d9d980;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.mid_menu .left_nav, .right_nav{
+    display:flex;
+    justify-content: space-between;
+    width: 25%;
+}
+.mid_menu .left_nav a, .right_nav a{
+    background-color:#4d4d4d;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+.mid_img{
+    position: absolute;
+    transform: translate(-50%);
+    top: 5px;
+    left: 50vw;
+    width: 150px;
+    height: 150px;
+}
+.mid_img img{
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+}
+.hover_effect:hover{
+    background-color: #000000;
+    color: #fff;
+}

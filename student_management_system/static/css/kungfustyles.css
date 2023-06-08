@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000000;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    position: fixed;
+    z-index: 3;
+}
+.background_image{
+    width: 100%;
+    position: relative;
+    background-color: #000000;
+}
+.background_image img{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    opacity: 0.5;
+}
+#maincontent{
+    top:65vh;
+}
+#content_inside{
+    background-color: #fff;
+}
+#background_content{
+    line-height:0;
+    margin-top:20vh;
+    padding-bottom: 50px;
+    position:relative;
+    text-align:center;
+    z-index:0;
+}
+#background_content img{
+  width: 10vw;
+  height: auto;
+  display: block;
+  position: absolute;
+  margin-left: 45vw;
+  margin-right: 50vw;
+  z-index: 2;
+  margin-top: 25px;
+  padding-top: 10vh;
+  opacity: 0.7;
+}
+#background_content p{
+    color:#fff;
+    font-family:'Lucida Console', Courier, monospace ; 
+    font-size:4vw; 
+    font-weight:900;
+    margin-top: 38vh;
+}
+#style_logo h3{
+    font-size: 25px; 
+    font-weight: 600; 
+    text-shadow: 10px white;
+    text-align: center;
+    text-shadow: -2px 1px hsl(0deg, 0%, 23.46%);
+    margin-left: 44vw;
+    padding-top: 10px;
+}
+#style_logo img{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin-left: 47vw;
+}
+.styles{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.inner_style{
+    display: flex;
+    flex-wrap: wrap;
+    top: 10px;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 30px;
+}
+.style_img{
+    width: 400px;
+    height: 300px;
+    position: relative;
+}
+.style_img img{
+    width: 350px;
+    height: 290px;
+    position: relative;
+    border-radius: 20px;
+    border: 5px solid beige;
+}
+.style_text h3{
+    font-size: 24px;
+    text-align: center;
+}
+.style_text p{
+    text-align: justify;
+    font-size: 18px;
+    vertical-align: middle;
+    font-style: italic;
+}
+.style_text{
+    position: relative;
+    width: 50%;
+    top: 20px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.more_info{
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+}
+.more_info a{
+    color: #ffffff;
+    position: relative;
+    top: 20px;
+    background-color: #512d2d;
+    font-size: 16px;
+    margin: 5px;
+    border: 2px solid white;
+    cursor: pointer;
+    width: 130px;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+.hover_effect:hover{
+    background-color: #000000;
+    color: #fff;
+}
