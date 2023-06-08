@@ -30,4 +30,7 @@ urlpatterns = [
     path('kungfustyles/', views.kungfustyles, name='kungfustyles'),
     path('login/', views.login, name='login'),
     path('shaolin/', views.shaolin, name='shaolin'),
+    path('taichi/', views.taichi, name='taichi'),
+    path('qigong/', views.qigong, name='qigong'),
+    path('sanda/', views.sanda, name='sanda'),
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

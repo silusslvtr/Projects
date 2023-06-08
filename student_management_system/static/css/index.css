@@ -246,6 +246,7 @@ background-color: rgba(53, 53, 54, 0.712);
 
 .columninside:hover .columninfo {
 opacity: 1;
+cursor: pointer;
 }
 
 .columninfo_inside{

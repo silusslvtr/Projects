@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      {% block title %}
+
+      Tai Chi
+
+      {%endblock%}
+
+    </title>
+    {% load static %}<link href="{% static 'css/navbar.css' %}" rel="stylesheet" type="text/css">
+    {% load static %}<link href="{% static 'img/Buddha_logo.png' %}" rel="icon" type="image/x-icon">
+    {% load static %}<link href="{% static 'css/taichi.css' %}" rel="stylesheet" type="text/css">
+    {% load static %}<link href="{% static 'css/main.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <div class="navbar">
+    {% include 'navbar.html' %}
+  </div>
+
+  <div class="background_image">
+    {% load static %}<img src="{% static 'img/taichi_bg_img.jpg' %}">
+    <div id="background_content">
+      <img src="{% static 'img/shaolin_buddha.png' %}"><br/>
+      <p Style=" font-weight: 200; font-style: italic; font-size: 2vw; padding: 20px;">Learn <b>KUNG FU</b> in</p><br/>
+      <p style="margin-top: 5vh; text-shadow: 0 0 20px #fff;">SHAOLIN NEPAL</p><br/>
+  </div>
+  </div>
+
+  <div id="maincontent">
+
+    <div id="content_inside">
+        <div class="styles">
+            <div id="style_logo">
+                {% load static %}<img src="{% static 'img/style.png' %}">
+                <h3> Tai Chi </h3>
+            </div>
+
+            <div class="style">
+
+                <div class="inner_style">
+                    <div class="style_img">
+                    <img src="{% static 'img/taichi_img.jfif' %}">
+                    </div>
+                    <div class="style_text">
+                        <h3>太极</h3>
+                        <p>
+                            Taiji (the `supreme ultimate` school) was derived from Wuji ('emptiness'; 
+                            the `non-ultimate` school) and composed of two different states (liang yi)Yin 
+                            and Yang. From Liang Yi came sancai (the 'three components') and sixiang (the 
+                            'four kinds of appearances'). Bagua (Eight Symbols) also came from sixiang. 
+                            Tai Chi is often thought of as being quintessential of China, entailing the 
+                            principles of Yin and Yang from the I Ching, (the Book of Changes), rooted in 
+                            Chinese medicine (meridians and specific names of vessels), with the meditative 
+                            aspect of it's practice in focusing on the breath.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mid_style_text">
+                    <p>
+                        As force and flexibility are compatible within, Tai Chi can be used to 
+                        defend, attack and strengthen body as well as prevent and help cure illness. 
+                        It is suited to peple of any age, gender or body form.<br/>
+                        Tai Chi is widely practiced in China. It's history stretches back many years 
+                        and it's different schools have contributed to it's widespread practice. Stories 
+                        about the origination and spread of Tai Chi have always existed among martial 
+                        artists and passed on from them in the oral tradition.<br/>
+                        In the ancient Chinese text `Detailed Explanation on Postures of Taiji Sword and 
+                        Tai Chi` written by the South Yue dynasty prime minister Wen Jinzhi , there is a 
+                        written account on the origination of Tai Chi. The passage reads that there was 
+                        a man named Zhang Sanfeng who was born in Yizhou in Liaodong province. He could 
+                        run 1000 kilometers a day. In the early years of HongWu in the Ming Dynasty 
+                        (1368-1644), he went to Shu (now Sichuan ) Province to help build a road. In 
+                        the 27th year of Hongwu, he came to Wudang mountain to recite lection. One day, 
+                        a magpie flew into the yard and perched on the tree. He followed the sound he 
+                        heard of the bird until through a window, Zhang saw the bird above and a snake 
+                        below on the ground staring at each other, preparing to fight. When the bird 
+                        assaulted down on the snake, the bird and the snake were propelled into fierce 
+                        action, but the snake moved its body with slight action and waved away the bird 
+                        every time without being injured. Zhang was rather impressed and realised that 
+                        changes can be conquered by immobility and that flexibility can overcome force.
+                    </p>
+                </div>
+
+                <div class="image_style">
+                    <div class="style_img_1">
+                        <img src="{% static 'img/taichi_1.jpg' %}">
+                    </div>
+                    <div class="style_img_1">
+                        <img src="{% static 'img/taichi_2.jpg' %}">
+                    </div>
+                    <div class="style_img_1">
+                        <img src="{% static 'img/taichi_3.jpg' %}">
+                    </div>
+                </div>
+
+                <div class="mid_text">
+                    <h2>To Learn Tai Chi</h2>
+                    <p>
+                        Follow your thought and keep calm. Maintain a natural breath. 
+                        You are required to fix attention and rest your thought, concentrate on 
+                        action; move and breathe smoothly and never try to block your breath. Sit 
+                        straight and move slowly and softly. You should keep a relaxed and natural 
+                        posture, do not lean askew. Every act is fluent and smooth, like wind flying, 
+                        water flowing. A round and complete radiance in every act. You are demanded to 
+                        make acts move as arc or spiral, one after another without block. Your waist 
+                        stays as axis, with which the whole body is oriented on. Act fluently and 
+                        coherently, weakness and force in company. Your acts are to be closely connected, 
+                        weakness and force distinguished, while center of power always remaining stable. 
+                        Agile and smoothly act with softness and power mutually corresponded. Every act 
+                        is required to be light and stable, but not buoyant or stark. Acts are soft but 
+                        powerful within, full of flexibility.Strength is exerted but done so in 
+                        consciousness and without any sense of clumsiness.
+                    </p>
+                </div>
+                <div class="middle_outer_content">
+                    <div class="middle_content">
+                        <div class="middle_content_1">
+                            <h2>Taiji Principles</h2>
+                            <p>
+                                Change is an inevitable process of all forms of matter.<br/>
+    
+                                All changes follow specific laws which are predictable.<br/>
+    
+                                Balance or equilibrium is a part of this constant change.<br/>
+    
+                                The constantly evolving material world and all matter result from 
+                                the antagonistic movement of two great opposing material forces, Yin 
+                                and Yang.<br/>
+    
+                                The longevity of the evolving process for any form of matter arises 
+                                from the interactions of two opposing energies (Yin & Yang).<br/>
+    
+                                Taiji is the force that gives birth to Yin and Yang and ultimately is 
+                                responsible for the ever-evolving matter.<br/>
+    
+                                Taiji is a form of supremely immeasurable energy without tangible limits. 
+                                It exists everywhere and gives life to all things.
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                            </p>
+                        </div>
+                        <div class="middle_content_2">
+                            <img src="{% static 'img/taichi_4.jpg' %}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+      <div id="footercontent">
+        <h3 id="title_name"> Swoyambhu Traditional Kung Fu Training Center ( Shaolin Nepal )</h3>
+        <p id="info">Nepal, Bagmati Province, Kathmandu, Swoyambhu - 15, Kimdol <br/><br/> Contact : 9861069747 , 9869749284</p>
+        <div id="footer_img">
+          <a href="https://www.facebook.com/ShaolinNepal/" target="_blank"><img src="{% static 'img/fb_img.png' %}" id="fb"></a>
+          <a href="https://www.instagram.com/raju.nepali.3133/" target="_blank"><img src="{% static 'img/insta_img.jfif' %}" id="insta"></a></br>
+        </div>
+        <div id="ft_cp_text">
+          <p id="#copyright_text">Copyright &copy; 2023 Shaolin Nepal | Powered by Shaolin Nepal</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
